@@ -3,9 +3,9 @@
 项目分层结构如下图：
 <br><br>
 
-![截图](https://github.com/zhfei/MyTestWorkProduct/blob/master/MyTestWorkProduct/Assets.xcassets/LeftAligen.imageset/LeftAligen.png)
+![截图](https://github.com/zhfei/MyTestWorkProduct/MyTestWorkProduct/Assets.xcassets/ApplicationFrameWork/屏幕快照 2016-06-16 上午1.40.31.imageset/屏幕快照 2016-06-16 上午1.40.31.png)
 <br><br>
 
 效果截图：
 <br><br>
-![截图](https://github.com/zhfei/MyTestWorkProduct/blob/master/MyTestWorkProduct/Assets.xcassets/LeftAligenCode.imageset/LeftAligenCode.png)
+![截图](https://github.com/zhfei/MyTestWorkProduct/MyTestWorkProduct/Assets.xcassets/ApplicationFrameWork/Simulator Screen Shot 2016年6月16日 上午1.40.54.imageset/Simulator Screen Shot 2016年6月16日 上午1.40.54.png)
