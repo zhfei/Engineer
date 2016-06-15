@@ -1,0 +1,18 @@
+//
+//  Map.pch
+//  Map
+//
+//  Created by zhoufei on 16/6/12.
+//  Copyright © 2016年 zhoufei. All rights reserved.
+//
+
+#ifndef Map_pch
+#define Map_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "Header.h"
+#import "FZUtility.h"
+
+#endif /* Map_pch */
