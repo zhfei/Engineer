@@ -473,7 +473,6 @@
 				9101E2C41D05B0910064729F /* Sources */,
 				9101E2C51D05B0910064729F /* Frameworks */,
 				9101E2C61D05B0910064729F /* Resources */,
-				9B2D28B453D60EAEC659C6F0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -565,28 +564,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9B2D28B453D60EAEC659C6F0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Map/Pods-Map-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/BottomComponentLib/BottomComponentLib.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BottomComponentLib.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Map/Pods-Map-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		F9387A681B223DDD3908412D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
