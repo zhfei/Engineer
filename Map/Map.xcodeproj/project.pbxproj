@@ -14,16 +14,21 @@
 		9101E2E61D05B0910064729F /* MapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9101E2E51D05B0910064729F /* MapTests.m */; };
 		914D4E981D11BE510099AFF1 /* 汉仪菱心体简.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 914D4E971D11BE510099AFF1 /* 汉仪菱心体简.ttf */; };
 		914D4E9C1D11C30D0099AFF1 /* FZUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 914D4E9B1D11C30D0099AFF1 /* FZUtility.m */; };
+		91AFCE6C218D333C000C84FC /* FZMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AFCE48218D333C000C84FC /* FZMessageViewController.m */; };
+		91AFCE6D218D333C000C84FC /* FZSportsCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AFCE4D218D333C000C84FC /* FZSportsCircleViewController.m */; };
+		91AFCE6E218D333C000C84FC /* FZMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AFCE51218D333C000C84FC /* FZMineViewController.m */; };
+		91AFCE6F218D333C000C84FC /* FZSportsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AFCE55218D333C000C84FC /* FZSportsViewController.m */; };
+		91AFCE70218D333C000C84FC /* FZFoundVCCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AFCE5A218D333C000C84FC /* FZFoundVCCoordinator.m */; };
+		91AFCE71218D333C000C84FC /* FZFoundViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AFCE5C218D333C000C84FC /* FZFoundViewModel.m */; };
+		91AFCE72218D333C000C84FC /* FZUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AFCE62218D333C000C84FC /* FZUserModel.m */; };
+		91AFCE73218D333C000C84FC /* FZFoundStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AFCE64218D333C000C84FC /* FZFoundStorage.m */; };
+		91AFCE74218D333C000C84FC /* FZFoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AFCE68218D333C000C84FC /* FZFoundViewController.m */; };
+		91AFCE75218D333C000C84FC /* FZGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AFCE6A218D333C000C84FC /* FZGradientView.m */; };
 		91F3E4611D0DAB4A008E429B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F3E45D1D0DAB4A008E429B /* BaseViewController.m */; };
 		91F3E4621D0DAB4A008E429B /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F3E45F1D0DAB4A008E429B /* MainTabBarViewController.m */; };
 		91F3E4671D0DB2F3008E429B /* Default@2x-568h.png in Resources */ = {isa = PBXBuildFile; fileRef = 91F3E4641D0DB2F3008E429B /* Default@2x-568h.png */; };
 		91F3E4681D0DB2F3008E429B /* Default@2x-R2.png in Resources */ = {isa = PBXBuildFile; fileRef = 91F3E4651D0DB2F3008E429B /* Default@2x-R2.png */; };
 		91F3E4691D0DB2F3008E429B /* Default@2x-R4.png in Resources */ = {isa = PBXBuildFile; fileRef = 91F3E4661D0DB2F3008E429B /* Default@2x-R4.png */; };
-		91F3E4801D0DB4C1008E429B /* FZFoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F3E47F1D0DB4C1008E429B /* FZFoundViewController.m */; };
-		91F3E4831D0DB4DD008E429B /* FZMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F3E4821D0DB4DD008E429B /* FZMessageViewController.m */; };
-		91F3E4861D0DB4F1008E429B /* FZMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F3E4851D0DB4F1008E429B /* FZMineViewController.m */; };
-		91F3E4891D0DB503008E429B /* FZSportsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F3E4881D0DB503008E429B /* FZSportsViewController.m */; };
-		91F3E48C1D0DB516008E429B /* FZSportsCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F3E48B1D0DB516008E429B /* FZSportsCircleViewController.m */; };
 		91F3E48F1D0DB57E008E429B /* BaseNavigationtroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F3E48E1D0DB57E008E429B /* BaseNavigationtroller.m */; };
 		91F85B4C1D071AAE0029EEC2 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F85B4B1D071AAE0029EEC2 /* UIView+Frame.m */; };
 /* End PBXBuildFile section */
@@ -53,6 +58,28 @@
 		914D4E991D11C2460099AFF1 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		914D4E9A1D11C30D0099AFF1 /* FZUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZUtility.h; sourceTree = "<group>"; };
 		914D4E9B1D11C30D0099AFF1 /* FZUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZUtility.m; sourceTree = "<group>"; };
+		91AFCE48218D333C000C84FC /* FZMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZMessageViewController.m; sourceTree = "<group>"; };
+		91AFCE49218D333C000C84FC /* FZMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZMessageViewController.h; sourceTree = "<group>"; };
+		91AFCE4C218D333C000C84FC /* FZSportsCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZSportsCircleViewController.h; sourceTree = "<group>"; };
+		91AFCE4D218D333C000C84FC /* FZSportsCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZSportsCircleViewController.m; sourceTree = "<group>"; };
+		91AFCE50218D333C000C84FC /* FZMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZMineViewController.h; sourceTree = "<group>"; };
+		91AFCE51218D333C000C84FC /* FZMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZMineViewController.m; sourceTree = "<group>"; };
+		91AFCE54218D333C000C84FC /* FZSportsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZSportsViewController.h; sourceTree = "<group>"; };
+		91AFCE55218D333C000C84FC /* FZSportsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZSportsViewController.m; sourceTree = "<group>"; };
+		91AFCE58218D333C000C84FC /* FZFoundVCCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZFoundVCCoordinator.h; sourceTree = "<group>"; };
+		91AFCE59218D333C000C84FC /* FZFoundCoordinatorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZFoundCoordinatorProtocol.h; sourceTree = "<group>"; };
+		91AFCE5A218D333C000C84FC /* FZFoundVCCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZFoundVCCoordinator.m; sourceTree = "<group>"; };
+		91AFCE5C218D333C000C84FC /* FZFoundViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZFoundViewModel.m; sourceTree = "<group>"; };
+		91AFCE5D218D333C000C84FC /* FZFoundViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZFoundViewModel.h; sourceTree = "<group>"; };
+		91AFCE5F218D333C000C84FC /* FZFoundEnumType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZFoundEnumType.h; sourceTree = "<group>"; };
+		91AFCE61218D333C000C84FC /* FZUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZUserModel.h; sourceTree = "<group>"; };
+		91AFCE62218D333C000C84FC /* FZUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZUserModel.m; sourceTree = "<group>"; };
+		91AFCE64218D333C000C84FC /* FZFoundStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZFoundStorage.m; sourceTree = "<group>"; };
+		91AFCE65218D333C000C84FC /* FZFoundStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZFoundStorage.h; sourceTree = "<group>"; };
+		91AFCE67218D333C000C84FC /* FZFoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZFoundViewController.h; sourceTree = "<group>"; };
+		91AFCE68218D333C000C84FC /* FZFoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZFoundViewController.m; sourceTree = "<group>"; };
+		91AFCE6A218D333C000C84FC /* FZGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZGradientView.m; sourceTree = "<group>"; };
+		91AFCE6B218D333C000C84FC /* FZGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZGradientView.h; sourceTree = "<group>"; };
 		91F3E45C1D0DAB4A008E429B /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		91F3E45D1D0DAB4A008E429B /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		91F3E45E1D0DAB4A008E429B /* MainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarViewController.h; sourceTree = "<group>"; };
@@ -60,16 +87,6 @@
 		91F3E4641D0DB2F3008E429B /* Default@2x-568h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x-568h.png"; sourceTree = "<group>"; };
 		91F3E4651D0DB2F3008E429B /* Default@2x-R2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x-R2.png"; sourceTree = "<group>"; };
 		91F3E4661D0DB2F3008E429B /* Default@2x-R4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x-R4.png"; sourceTree = "<group>"; };
-		91F3E47E1D0DB4C1008E429B /* FZFoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZFoundViewController.h; sourceTree = "<group>"; };
-		91F3E47F1D0DB4C1008E429B /* FZFoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZFoundViewController.m; sourceTree = "<group>"; };
-		91F3E4811D0DB4DD008E429B /* FZMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZMessageViewController.h; sourceTree = "<group>"; };
-		91F3E4821D0DB4DD008E429B /* FZMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZMessageViewController.m; sourceTree = "<group>"; };
-		91F3E4841D0DB4F1008E429B /* FZMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZMineViewController.h; sourceTree = "<group>"; };
-		91F3E4851D0DB4F1008E429B /* FZMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZMineViewController.m; sourceTree = "<group>"; };
-		91F3E4871D0DB503008E429B /* FZSportsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZSportsViewController.h; sourceTree = "<group>"; };
-		91F3E4881D0DB503008E429B /* FZSportsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZSportsViewController.m; sourceTree = "<group>"; };
-		91F3E48A1D0DB516008E429B /* FZSportsCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZSportsCircleViewController.h; sourceTree = "<group>"; };
-		91F3E48B1D0DB516008E429B /* FZSportsCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZSportsCircleViewController.m; sourceTree = "<group>"; };
 		91F3E48D1D0DB57E008E429B /* BaseNavigationtroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationtroller.h; sourceTree = "<group>"; };
 		91F3E48E1D0DB57E008E429B /* BaseNavigationtroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationtroller.m; sourceTree = "<group>"; };
 		91F3E4901D0DB7DD008E429B /* Map.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Map.pch; sourceTree = "<group>"; };
@@ -116,8 +133,12 @@
 		9101E2CA1D05B0910064729F /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				91AFCE56218D333C000C84FC /* Found */,
+				91AFCE46218D333C000C84FC /* Message */,
+				91AFCE4E218D333C000C84FC /* Mine */,
+				91AFCE52218D333C000C84FC /* Sports */,
+				91AFCE4A218D333C000C84FC /* SportsCircle */,
 				9101E2FC1D05B2D20064729F /* Other */,
-				9101E2F71D05B2890064729F /* Main */,
 				9101E2F81D05B2890064729F /* Resource */,
 				9101E2FB1D05B2890064729F /* Vender */,
 				9101E2F01D05B2740064729F /* Expand */,
@@ -212,18 +233,6 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
-		9101E2F71D05B2890064729F /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				91F3E46A1D0DB3CB008E429B /* Found */,
-				91F3E46B1D0DB3CB008E429B /* Message */,
-				91F3E46C1D0DB3CB008E429B /* Mine */,
-				91F3E46D1D0DB3CB008E429B /* Sports */,
-				91F3E46E1D0DB3CB008E429B /* SportsCircle */,
-			);
-			path = Main;
-			sourceTree = "<group>";
-		};
 		9101E2F81D05B2890064729F /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,176 +286,156 @@
 			path = TextFont;
 			sourceTree = "<group>";
 		};
+		91AFCE46218D333C000C84FC /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				91AFCE47218D333C000C84FC /* Controllers */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		91AFCE47218D333C000C84FC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				91AFCE48218D333C000C84FC /* FZMessageViewController.m */,
+				91AFCE49218D333C000C84FC /* FZMessageViewController.h */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		91AFCE4A218D333C000C84FC /* SportsCircle */ = {
+			isa = PBXGroup;
+			children = (
+				91AFCE4B218D333C000C84FC /* Controllers */,
+			);
+			path = SportsCircle;
+			sourceTree = "<group>";
+		};
+		91AFCE4B218D333C000C84FC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				91AFCE4C218D333C000C84FC /* FZSportsCircleViewController.h */,
+				91AFCE4D218D333C000C84FC /* FZSportsCircleViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		91AFCE4E218D333C000C84FC /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				91AFCE4F218D333C000C84FC /* Controllers */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		91AFCE4F218D333C000C84FC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				91AFCE50218D333C000C84FC /* FZMineViewController.h */,
+				91AFCE51218D333C000C84FC /* FZMineViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		91AFCE52218D333C000C84FC /* Sports */ = {
+			isa = PBXGroup;
+			children = (
+				91AFCE53218D333C000C84FC /* Controllers */,
+			);
+			path = Sports;
+			sourceTree = "<group>";
+		};
+		91AFCE53218D333C000C84FC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				91AFCE54218D333C000C84FC /* FZSportsViewController.h */,
+				91AFCE55218D333C000C84FC /* FZSportsViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		91AFCE56218D333C000C84FC /* Found */ = {
+			isa = PBXGroup;
+			children = (
+				91AFCE57218D333C000C84FC /* Coordinators */,
+				91AFCE5B218D333C000C84FC /* ViewModels */,
+				91AFCE5E218D333C000C84FC /* Types */,
+				91AFCE60218D333C000C84FC /* Models */,
+				91AFCE63218D333C000C84FC /* Storage */,
+				91AFCE66218D333C000C84FC /* Controllers */,
+				91AFCE69218D333C000C84FC /* Views */,
+			);
+			path = Found;
+			sourceTree = "<group>";
+		};
+		91AFCE57218D333C000C84FC /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				91AFCE58218D333C000C84FC /* FZFoundVCCoordinator.h */,
+				91AFCE59218D333C000C84FC /* FZFoundCoordinatorProtocol.h */,
+				91AFCE5A218D333C000C84FC /* FZFoundVCCoordinator.m */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		91AFCE5B218D333C000C84FC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				91AFCE5C218D333C000C84FC /* FZFoundViewModel.m */,
+				91AFCE5D218D333C000C84FC /* FZFoundViewModel.h */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		91AFCE5E218D333C000C84FC /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				91AFCE5F218D333C000C84FC /* FZFoundEnumType.h */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		91AFCE60218D333C000C84FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				91AFCE61218D333C000C84FC /* FZUserModel.h */,
+				91AFCE62218D333C000C84FC /* FZUserModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		91AFCE63218D333C000C84FC /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				91AFCE64218D333C000C84FC /* FZFoundStorage.m */,
+				91AFCE65218D333C000C84FC /* FZFoundStorage.h */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		91AFCE66218D333C000C84FC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				91AFCE67218D333C000C84FC /* FZFoundViewController.h */,
+				91AFCE68218D333C000C84FC /* FZFoundViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		91AFCE69218D333C000C84FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				91AFCE6A218D333C000C84FC /* FZGradientView.m */,
+				91AFCE6B218D333C000C84FC /* FZGradientView.h */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		91F3B6EE1D0EFC7E005C3087 /* bottomImages */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = bottomImages;
-			sourceTree = "<group>";
-		};
-		91F3E46A1D0DB3CB008E429B /* Found */ = {
-			isa = PBXGroup;
-			children = (
-				91F3E46F1D0DB417008E429B /* Controller */,
-				91F3E4701D0DB417008E429B /* Model */,
-				91F3E4711D0DB417008E429B /* View */,
-			);
-			path = Found;
-			sourceTree = "<group>";
-		};
-		91F3E46B1D0DB3CB008E429B /* Message */ = {
-			isa = PBXGroup;
-			children = (
-				91F3E4721D0DB427008E429B /* Controller */,
-				91F3E4731D0DB427008E429B /* Model */,
-				91F3E4741D0DB427008E429B /* View */,
-			);
-			path = Message;
-			sourceTree = "<group>";
-		};
-		91F3E46C1D0DB3CB008E429B /* Mine */ = {
-			isa = PBXGroup;
-			children = (
-				91F3E4751D0DB437008E429B /* Controller */,
-				91F3E4761D0DB437008E429B /* Model */,
-				91F3E4771D0DB437008E429B /* View */,
-			);
-			path = Mine;
-			sourceTree = "<group>";
-		};
-		91F3E46D1D0DB3CB008E429B /* Sports */ = {
-			isa = PBXGroup;
-			children = (
-				91F3E4781D0DB442008E429B /* Controller */,
-				91F3E4791D0DB442008E429B /* Model */,
-				91F3E47A1D0DB442008E429B /* View */,
-			);
-			path = Sports;
-			sourceTree = "<group>";
-		};
-		91F3E46E1D0DB3CB008E429B /* SportsCircle */ = {
-			isa = PBXGroup;
-			children = (
-				91F3E47B1D0DB44D008E429B /* Controller */,
-				91F3E47C1D0DB44D008E429B /* Model */,
-				91F3E47D1D0DB44D008E429B /* View */,
-			);
-			path = SportsCircle;
-			sourceTree = "<group>";
-		};
-		91F3E46F1D0DB417008E429B /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				91F3E47E1D0DB4C1008E429B /* FZFoundViewController.h */,
-				91F3E47F1D0DB4C1008E429B /* FZFoundViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		91F3E4701D0DB417008E429B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		91F3E4711D0DB417008E429B /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		91F3E4721D0DB427008E429B /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				91F3E4811D0DB4DD008E429B /* FZMessageViewController.h */,
-				91F3E4821D0DB4DD008E429B /* FZMessageViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		91F3E4731D0DB427008E429B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		91F3E4741D0DB427008E429B /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		91F3E4751D0DB437008E429B /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				91F3E4841D0DB4F1008E429B /* FZMineViewController.h */,
-				91F3E4851D0DB4F1008E429B /* FZMineViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		91F3E4761D0DB437008E429B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		91F3E4771D0DB437008E429B /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		91F3E4781D0DB442008E429B /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				91F3E4871D0DB503008E429B /* FZSportsViewController.h */,
-				91F3E4881D0DB503008E429B /* FZSportsViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		91F3E4791D0DB442008E429B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		91F3E47A1D0DB442008E429B /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		91F3E47B1D0DB44D008E429B /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				91F3E48A1D0DB516008E429B /* FZSportsCircleViewController.h */,
-				91F3E48B1D0DB516008E429B /* FZSportsCircleViewController.m */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		91F3E47C1D0DB44D008E429B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		91F3E47D1D0DB44D008E429B /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -554,18 +543,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91F3E4831D0DB4DD008E429B /* FZMessageViewController.m in Sources */,
+				91AFCE6D218D333C000C84FC /* FZSportsCircleViewController.m in Sources */,
+				91AFCE71218D333C000C84FC /* FZFoundViewModel.m in Sources */,
+				91AFCE6C218D333C000C84FC /* FZMessageViewController.m in Sources */,
+				91AFCE70218D333C000C84FC /* FZFoundVCCoordinator.m in Sources */,
 				91F85B4C1D071AAE0029EEC2 /* UIView+Frame.m in Sources */,
 				91F3E4611D0DAB4A008E429B /* BaseViewController.m in Sources */,
-				91F3E4861D0DB4F1008E429B /* FZMineViewController.m in Sources */,
 				914D4E9C1D11C30D0099AFF1 /* FZUtility.m in Sources */,
 				9101E2D01D05B0910064729F /* AppDelegate.m in Sources */,
-				91F3E4801D0DB4C1008E429B /* FZFoundViewController.m in Sources */,
-				91F3E48C1D0DB516008E429B /* FZSportsCircleViewController.m in Sources */,
-				91F3E4891D0DB503008E429B /* FZSportsViewController.m in Sources */,
+				91AFCE73218D333C000C84FC /* FZFoundStorage.m in Sources */,
+				91AFCE72218D333C000C84FC /* FZUserModel.m in Sources */,
 				9101E2CD1D05B0910064729F /* main.m in Sources */,
 				91F3E48F1D0DB57E008E429B /* BaseNavigationtroller.m in Sources */,
+				91AFCE75218D333C000C84FC /* FZGradientView.m in Sources */,
+				91AFCE6F218D333C000C84FC /* FZSportsViewController.m in Sources */,
+				91AFCE74218D333C000C84FC /* FZFoundViewController.m in Sources */,
 				91F3E4621D0DAB4A008E429B /* MainTabBarViewController.m in Sources */,
+				91AFCE6E218D333C000C84FC /* FZMineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
