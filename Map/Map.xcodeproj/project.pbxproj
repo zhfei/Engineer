@@ -15,6 +15,8 @@
 		9101E2E61D05B0910064729F /* MapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9101E2E51D05B0910064729F /* MapTests.m */; };
 		914D4E981D11BE510099AFF1 /* 汉仪菱心体简.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 914D4E971D11BE510099AFF1 /* 汉仪菱心体简.ttf */; };
 		914D4E9C1D11C30D0099AFF1 /* FZUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 914D4E9B1D11C30D0099AFF1 /* FZUtility.m */; };
+		919F78D9218FF69100A82C0D /* FZFoundRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 919F78D8218FF69100A82C0D /* FZFoundRequest.m */; };
+		919F78DC218FF6D800A82C0D /* FZFoundServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 919F78DB218FF6D800A82C0D /* FZFoundServer.m */; };
 		91AFCE6C218D333C000C84FC /* FZMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AFCE48218D333C000C84FC /* FZMessageViewController.m */; };
 		91AFCE6D218D333C000C84FC /* FZSportsCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AFCE4D218D333C000C84FC /* FZSportsCircleViewController.m */; };
 		91AFCE6E218D333C000C84FC /* FZMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AFCE51218D333C000C84FC /* FZMineViewController.m */; };
@@ -61,6 +63,10 @@
 		914D4E991D11C2460099AFF1 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		914D4E9A1D11C30D0099AFF1 /* FZUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZUtility.h; sourceTree = "<group>"; };
 		914D4E9B1D11C30D0099AFF1 /* FZUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZUtility.m; sourceTree = "<group>"; };
+		919F78D7218FF69100A82C0D /* FZFoundRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZFoundRequest.h; sourceTree = "<group>"; };
+		919F78D8218FF69100A82C0D /* FZFoundRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FZFoundRequest.m; sourceTree = "<group>"; };
+		919F78DA218FF6D800A82C0D /* FZFoundServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZFoundServer.h; sourceTree = "<group>"; };
+		919F78DB218FF6D800A82C0D /* FZFoundServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FZFoundServer.m; sourceTree = "<group>"; };
 		91AFCE48218D333C000C84FC /* FZMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZMessageViewController.m; sourceTree = "<group>"; };
 		91AFCE49218D333C000C84FC /* FZMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZMessageViewController.h; sourceTree = "<group>"; };
 		91AFCE4C218D333C000C84FC /* FZSportsCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZSportsCircleViewController.h; sourceTree = "<group>"; };
@@ -293,6 +299,24 @@
 			path = TextFont;
 			sourceTree = "<group>";
 		};
+		919F78D5218FF67800A82C0D /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				919F78D7218FF69100A82C0D /* FZFoundRequest.h */,
+				919F78D8218FF69100A82C0D /* FZFoundRequest.m */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		919F78D6218FF67800A82C0D /* Servers */ = {
+			isa = PBXGroup;
+			children = (
+				919F78DA218FF6D800A82C0D /* FZFoundServer.h */,
+				919F78DB218FF6D800A82C0D /* FZFoundServer.m */,
+			);
+			path = Servers;
+			sourceTree = "<group>";
+		};
 		91AFCE46218D333C000C84FC /* Message */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,6 +388,8 @@
 		91AFCE56218D333C000C84FC /* Found */ = {
 			isa = PBXGroup;
 			children = (
+				919F78D5218FF67800A82C0D /* Requests */,
+				919F78D6218FF67800A82C0D /* Servers */,
 				91AFCE57218D333C000C84FC /* Coordinators */,
 				91AFCE5B218D333C000C84FC /* ViewModels */,
 				91AFCE5E218D333C000C84FC /* Types */,
@@ -595,6 +621,7 @@
 			files = (
 				91AFCE6D218D333C000C84FC /* FZSportsCircleViewController.m in Sources */,
 				91AFCE71218D333C000C84FC /* FZFoundViewModel.m in Sources */,
+				919F78DC218FF6D800A82C0D /* FZFoundServer.m in Sources */,
 				91AFCE6C218D333C000C84FC /* FZMessageViewController.m in Sources */,
 				91AFCE70218D333C000C84FC /* FZFoundVCCoordinator.m in Sources */,
 				91F85B4C1D071AAE0029EEC2 /* UIView+Frame.m in Sources */,
@@ -603,6 +630,7 @@
 				9101E2D01D05B0910064729F /* AppDelegate.m in Sources */,
 				91AFCE73218D333C000C84FC /* FZFoundStorage.m in Sources */,
 				91AFCE72218D333C000C84FC /* FZUserModel.m in Sources */,
+				919F78D9218FF69100A82C0D /* FZFoundRequest.m in Sources */,
 				9101E2CD1D05B0910064729F /* main.m in Sources */,
 				91F3E48F1D0DB57E008E429B /* BaseNavigationtroller.m in Sources */,
 				91AFCE75218D333C000C84FC /* FZGradientView.m in Sources */,
