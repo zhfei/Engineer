@@ -27,6 +27,7 @@
 		91AFCE73218D333C000C84FC /* FZFoundStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AFCE64218D333C000C84FC /* FZFoundStorage.m */; };
 		91AFCE74218D333C000C84FC /* FZFoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AFCE68218D333C000C84FC /* FZFoundViewController.m */; };
 		91AFCE75218D333C000C84FC /* FZGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91AFCE6A218D333C000C84FC /* FZGradientView.m */; };
+		91CD906121E87AA3002AA652 /* 组件化结构.xmind in Resources */ = {isa = PBXBuildFile; fileRef = 91CD906021E87AA3002AA652 /* 组件化结构.xmind */; };
 		91F3E4611D0DAB4A008E429B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F3E45D1D0DAB4A008E429B /* BaseViewController.m */; };
 		91F3E4621D0DAB4A008E429B /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91F3E45F1D0DAB4A008E429B /* MainTabBarViewController.m */; };
 		91F3E4671D0DB2F3008E429B /* Default@2x-568h.png in Resources */ = {isa = PBXBuildFile; fileRef = 91F3E4641D0DB2F3008E429B /* Default@2x-568h.png */; };
@@ -89,6 +90,7 @@
 		91AFCE68218D333C000C84FC /* FZFoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZFoundViewController.m; sourceTree = "<group>"; };
 		91AFCE6A218D333C000C84FC /* FZGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZGradientView.m; sourceTree = "<group>"; };
 		91AFCE6B218D333C000C84FC /* FZGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZGradientView.h; sourceTree = "<group>"; };
+		91CD906021E87AA3002AA652 /* 组件化结构.xmind */ = {isa = PBXFileReference; lastKnownFileType = file; path = "组件化结构.xmind"; sourceTree = "<group>"; };
 		91F3E45C1D0DAB4A008E429B /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		91F3E45D1D0DAB4A008E429B /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		91F3E45E1D0DAB4A008E429B /* MainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarViewController.h; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 		9101E2BF1D05B0910064729F = {
 			isa = PBXGroup;
 			children = (
+				91CD905F21E87A2E002AA652 /* Documents */,
 				9101E2CA1D05B0910064729F /* Map */,
 				9101E2E41D05B0910064729F /* MapTests */,
 				9101E2C91D05B0910064729F /* Products */,
@@ -464,6 +467,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		91CD905F21E87A2E002AA652 /* Documents */ = {
+			isa = PBXGroup;
+			children = (
+				91CD906021E87AA3002AA652 /* 组件化结构.xmind */,
+			);
+			name = Documents;
+			path = Map/Documents;
+			sourceTree = "<group>";
+		};
 		91F3B6EE1D0EFC7E005C3087 /* bottomImages */ = {
 			isa = PBXGroup;
 			children = (
@@ -575,6 +587,7 @@
 				91F3E4681D0DB2F3008E429B /* Default@2x-R2.png in Resources */,
 				91F3E4671D0DB2F3008E429B /* Default@2x-568h.png in Resources */,
 				9101E2DB1D05B0910064729F /* LaunchScreen.storyboard in Resources */,
+				91CD906121E87AA3002AA652 /* 组件化结构.xmind in Resources */,
 				9101E2D81D05B0910064729F /* Assets.xcassets in Resources */,
 				91F3E4691D0DB2F3008E429B /* Default@2x-R4.png in Resources */,
 			);
