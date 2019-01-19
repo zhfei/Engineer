@@ -7,5 +7,6 @@ target "Engineer" do
    pod 'BottomComponentLib', :git => 'https://github.com/zhfei/BottomComponentLib.git'
    #pod 'DoraemonKit/WithLogger', :configurations => ['Debug']
    pod "CTMediator"
+   pod "MGJRouter"
 end
 
