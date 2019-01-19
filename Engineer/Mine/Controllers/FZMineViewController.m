@@ -19,11 +19,13 @@
 
 - (IBAction)sportsPlan:(UIButton *)sender {
     UIViewController *vc = [[FZMineCoordinator sharedFZMineCoordinator] targetVCWithClassName:NSStringFromClass([FZSportsPlanVC class])];
+    [(FZSportsPlanVC *)vc configContent:sender.currentTitle];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (IBAction)sportsResult:(UIButton *)sender {
     UIViewController *vc = [[FZMineCoordinator sharedFZMineCoordinator] targetVCWithClassName:NSStringFromClass([FZSportsResultVC class])];
+    [(FZSportsPlanVC *)vc configContent:sender.currentTitle];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

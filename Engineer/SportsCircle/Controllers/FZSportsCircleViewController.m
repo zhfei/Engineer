@@ -7,7 +7,15 @@
 //
 
 #import "FZSportsCircleViewController.h"
+#import "CTMediator+Mine.h"
 
 @implementation FZSportsCircleViewController
-
+- (IBAction)goSportsPlanDetail:(UIButton *)sender {
+    UIViewController *vc = [[CTMediator sharedInstance] Mediator_fetchSportsPlanVC:@{@"title":[sender currentTitle]}];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+- (IBAction)goSportsResultDetail:(UIButton *)sender {
+    UIViewController *vc = [[CTMediator sharedInstance] Mediator_fetchSportsResultVC:@{@"title":[sender currentTitle]}];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 @end
