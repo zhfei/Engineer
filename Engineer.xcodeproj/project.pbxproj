@@ -12,9 +12,9 @@
 		9136C55A21F3164D008BFEE6 /* FZSportsPlanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9136C55921F3164D008BFEE6 /* FZSportsPlanVC.m */; };
 		9136C55D21F31664008BFEE6 /* FZSportsResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9136C55C21F31664008BFEE6 /* FZSportsResultVC.m */; };
 		9136C56321F318D3008BFEE6 /* FZMineCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9136C56221F318D3008BFEE6 /* FZMineCoordinator.m */; };
-		9136C56621F31CAC008BFEE6 /* Target_Mine.m in Sources */ = {isa = PBXBuildFile; fileRef = 9136C56521F31CAC008BFEE6 /* Target_Mine.m */; };
-		9136C56A21F320EA008BFEE6 /* CTMediator+Mine.m in Sources */ = {isa = PBXBuildFile; fileRef = 9136C56921F320EA008BFEE6 /* CTMediator+Mine.m */; };
 		9136C56E21F3290C008BFEE6 /* FZSportsCircleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9136C56D21F3290C008BFEE6 /* FZSportsCircleViewController.xib */; };
+		9141928021F3618100C277AB /* CTMediator+Mine.m in Sources */ = {isa = PBXBuildFile; fileRef = 9141927F21F3618100C277AB /* CTMediator+Mine.m */; };
+		9141928421F3627B00C277AB /* Target_Mine.m in Sources */ = {isa = PBXBuildFile; fileRef = 9141928321F3627B00C277AB /* Target_Mine.m */; };
 		91A837AE21F2135C007883AC /* Default@2x-568h.png in Resources */ = {isa = PBXBuildFile; fileRef = 91A8376021F2135C007883AC /* Default@2x-568h.png */; };
 		91A837AF21F2135C007883AC /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A8376321F2135C007883AC /* UIView+Frame.m */; };
 		91A837B021F2135C007883AC /* FZUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A8376921F2135C007883AC /* FZUtility.m */; };
@@ -58,11 +58,11 @@
 		9136C56021F31838008BFEE6 /* FZMineCoordinatorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZMineCoordinatorProtocol.h; sourceTree = "<group>"; };
 		9136C56121F318D3008BFEE6 /* FZMineCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZMineCoordinator.h; sourceTree = "<group>"; };
 		9136C56221F318D3008BFEE6 /* FZMineCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FZMineCoordinator.m; sourceTree = "<group>"; };
-		9136C56421F31CAC008BFEE6 /* Target_Mine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_Mine.h; sourceTree = "<group>"; };
-		9136C56521F31CAC008BFEE6 /* Target_Mine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_Mine.m; sourceTree = "<group>"; };
-		9136C56821F320EA008BFEE6 /* CTMediator+Mine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+Mine.h"; sourceTree = "<group>"; };
-		9136C56921F320EA008BFEE6 /* CTMediator+Mine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+Mine.m"; sourceTree = "<group>"; };
 		9136C56D21F3290C008BFEE6 /* FZSportsCircleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FZSportsCircleViewController.xib; sourceTree = "<group>"; };
+		9141927E21F3618100C277AB /* CTMediator+Mine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CTMediator+Mine.h"; sourceTree = "<group>"; };
+		9141927F21F3618100C277AB /* CTMediator+Mine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+Mine.m"; sourceTree = "<group>"; };
+		9141928221F3627B00C277AB /* Target_Mine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_Mine.h; sourceTree = "<group>"; };
+		9141928321F3627B00C277AB /* Target_Mine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_Mine.m; sourceTree = "<group>"; };
 		91A8376021F2135C007883AC /* Default@2x-568h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x-568h.png"; sourceTree = "<group>"; };
 		91A8376321F2135C007883AC /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		91A8376421F2135C007883AC /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
@@ -159,10 +159,27 @@
 		9136C56721F320A8008BFEE6 /* FZMediator */ = {
 			isa = PBXGroup;
 			children = (
-				9136C56821F320EA008BFEE6 /* CTMediator+Mine.h */,
-				9136C56921F320EA008BFEE6 /* CTMediator+Mine.m */,
+				9141927D21F3618100C277AB /* Module_Mine */,
 			);
 			path = FZMediator;
+			sourceTree = "<group>";
+		};
+		9141927D21F3618100C277AB /* Module_Mine */ = {
+			isa = PBXGroup;
+			children = (
+				9141927E21F3618100C277AB /* CTMediator+Mine.h */,
+				9141927F21F3618100C277AB /* CTMediator+Mine.m */,
+			);
+			path = Module_Mine;
+			sourceTree = "<group>";
+		};
+		9141928121F3627B00C277AB /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				9141928221F3627B00C277AB /* Target_Mine.h */,
+				9141928321F3627B00C277AB /* Target_Mine.m */,
+			);
+			path = Actions;
 			sourceTree = "<group>";
 		};
 		91A8375F21F2135C007883AC /* Engineer */ = {
@@ -297,10 +314,9 @@
 		91A8378521F2135C007883AC /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				9141928121F3627B00C277AB /* Actions */,
 				9136C55F21F31813008BFEE6 /* Coordinators */,
 				91A8378621F2135C007883AC /* Controllers */,
-				9136C56421F31CAC008BFEE6 /* Target_Mine.h */,
-				9136C56521F31CAC008BFEE6 /* Target_Mine.m */,
 			);
 			path = Mine;
 			sourceTree = "<group>";
@@ -570,13 +586,13 @@
 				91A837C221F2135C007883AC /* FZFoundViewModel.m in Sources */,
 				91A837BC21F2135C007883AC /* FZMineViewController.m in Sources */,
 				91A837B021F2135C007883AC /* FZUtility.m in Sources */,
-				9136C56621F31CAC008BFEE6 /* Target_Mine.m in Sources */,
 				9136C55A21F3164D008BFEE6 /* FZSportsPlanVC.m in Sources */,
+				9141928421F3627B00C277AB /* Target_Mine.m in Sources */,
 				9136C55D21F31664008BFEE6 /* FZSportsResultVC.m in Sources */,
 				91A837B421F2135C007883AC /* BaseViewController.m in Sources */,
 				91A837B321F2135C007883AC /* BaseNavigationtroller.m in Sources */,
 				91A837B121F2135C007883AC /* FZSportsCircleViewController.m in Sources */,
-				9136C56A21F320EA008BFEE6 /* CTMediator+Mine.m in Sources */,
+				9141928021F3618100C277AB /* CTMediator+Mine.m in Sources */,
 				91A837C521F2135C007883AC /* FZFoundRequest.m in Sources */,
 				91A837C721F2135C007883AC /* FZGradientView.m in Sources */,
 				9136C56321F318D3008BFEE6 /* FZMineCoordinator.m in Sources */,

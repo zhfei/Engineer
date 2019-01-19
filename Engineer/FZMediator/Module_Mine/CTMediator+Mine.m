@@ -8,15 +8,16 @@
 
 #import "CTMediator+Mine.h"
 
-NSString * const FZMediatorTargetModuleName = @"Mine";
-NSString * const FZMediatorTargetActionFetchSportsResultVC = @"fetchSportsResultVC";
-NSString * const FZMediatorTargetActionFetchSportsPlanVC = @"fetchSportsPlanVC";
+NSString * const FZMediatorTargetMine = @"Mine";
+
+NSString * const FZMediatorActionNativFetchSportsResultVC = @"nativeFetchSportsResultVC";
+NSString * const FZMediatorActionNativFetchSportsPlanVC = @"nativeFetchSportsPlanVC";
 
 
 @implementation CTMediator (Mine)
 - (UIViewController *)Mediator_fetchSportsResultVC:(NSDictionary *)param {
     
-    UIViewController *vc = [self performTarget:FZMediatorTargetModuleName action:FZMediatorTargetActionFetchSportsResultVC params:param shouldCacheTarget:YES];
+    UIViewController *vc = [self performTarget:FZMediatorTargetMine action:FZMediatorActionNativFetchSportsResultVC params:param shouldCacheTarget:YES];
     if (vc == nil) {
         return [UIViewController new];
     } else {
@@ -24,7 +25,7 @@ NSString * const FZMediatorTargetActionFetchSportsPlanVC = @"fetchSportsPlanVC";
     }
 }
 - (UIViewController *)Mediator_fetchSportsPlanVC:(NSDictionary *)param {
-    UIViewController *vc = [self performTarget:FZMediatorTargetModuleName action:FZMediatorTargetActionFetchSportsPlanVC params:param shouldCacheTarget:YES];
+    UIViewController *vc = [self performTarget:FZMediatorTargetMine action:FZMediatorActionNativFetchSportsPlanVC params:param shouldCacheTarget:YES];
     if (vc == nil) {
         return [UIViewController new];
     } else {
