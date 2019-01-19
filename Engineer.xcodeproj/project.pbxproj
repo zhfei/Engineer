@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0017076EE98E0C649869294C /* libPods-Engineer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7EAF06D9E24C1A5BA2259E9 /* libPods-Engineer.a */; };
+		9136C55721F30F5E008BFEE6 /* FZMineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9136C55621F30F5E008BFEE6 /* FZMineViewController.xib */; };
+		9136C55A21F3164D008BFEE6 /* FZSportsPlanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9136C55921F3164D008BFEE6 /* FZSportsPlanVC.m */; };
+		9136C55D21F31664008BFEE6 /* FZSportsResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9136C55C21F31664008BFEE6 /* FZSportsResultVC.m */; };
+		9136C56321F318D3008BFEE6 /* FZMineCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9136C56221F318D3008BFEE6 /* FZMineCoordinator.m */; };
 		91A837AE21F2135C007883AC /* Default@2x-568h.png in Resources */ = {isa = PBXBuildFile; fileRef = 91A8376021F2135C007883AC /* Default@2x-568h.png */; };
 		91A837AF21F2135C007883AC /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A8376321F2135C007883AC /* UIView+Frame.m */; };
 		91A837B021F2135C007883AC /* FZUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A8376921F2135C007883AC /* FZUtility.m */; };
@@ -42,6 +46,15 @@
 		20E22D676E6D377B0680D77C /* Pods-Map.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Map.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Map/Pods-Map.debug.xcconfig"; sourceTree = "<group>"; };
 		50F0E490230E56D8A9E9150A /* Pods-Engineer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Engineer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Engineer/Pods-Engineer.debug.xcconfig"; sourceTree = "<group>"; };
 		9101E2C81D05B0910064729F /* Engineer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Engineer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9136C55621F30F5E008BFEE6 /* FZMineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FZMineViewController.xib; sourceTree = "<group>"; };
+		9136C55821F3164D008BFEE6 /* FZSportsPlanVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZSportsPlanVC.h; sourceTree = "<group>"; };
+		9136C55921F3164D008BFEE6 /* FZSportsPlanVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FZSportsPlanVC.m; sourceTree = "<group>"; };
+		9136C55B21F31664008BFEE6 /* FZSportsResultVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZSportsResultVC.h; sourceTree = "<group>"; };
+		9136C55C21F31664008BFEE6 /* FZSportsResultVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FZSportsResultVC.m; sourceTree = "<group>"; };
+		9136C55E21F317CA008BFEE6 /* FZCoordinatorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZCoordinatorProtocol.h; sourceTree = "<group>"; };
+		9136C56021F31838008BFEE6 /* FZMineCoordinatorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZMineCoordinatorProtocol.h; sourceTree = "<group>"; };
+		9136C56121F318D3008BFEE6 /* FZMineCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZMineCoordinator.h; sourceTree = "<group>"; };
+		9136C56221F318D3008BFEE6 /* FZMineCoordinator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FZMineCoordinator.m; sourceTree = "<group>"; };
 		91A8376021F2135C007883AC /* Default@2x-568h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x-568h.png"; sourceTree = "<group>"; };
 		91A8376321F2135C007883AC /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		91A8376421F2135C007883AC /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
@@ -125,9 +138,28 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		9136C55F21F31813008BFEE6 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				9136C56021F31838008BFEE6 /* FZMineCoordinatorProtocol.h */,
+				9136C56121F318D3008BFEE6 /* FZMineCoordinator.h */,
+				9136C56221F318D3008BFEE6 /* FZMineCoordinator.m */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 		91A8375F21F2135C007883AC /* Engineer */ = {
 			isa = PBXGroup;
 			children = (
+				91A8378A21F2135C007883AC /* Documents */,
+				91A8379021F2135C007883AC /* Found */,
+				91A8376121F2135C007883AC /* Expand */,
+				91A8376B21F2135C007883AC /* SportsCircle */,
+				91A8377121F2135C007883AC /* Other */,
+				91A8377A21F2135C007883AC /* Message */,
+				91A8378021F2135C007883AC /* Sports */,
+				91A8378521F2135C007883AC /* Mine */,
+				91A8378C21F2135C007883AC /* Resource */,
 				91A8377821F2135C007883AC /* Assets.xcassets */,
 				91A8377E21F2135C007883AC /* LaunchScreen.storyboard */,
 				91A8376F21F2135C007883AC /* Engineer.pch */,
@@ -136,17 +168,8 @@
 				91A8377921F2135C007883AC /* Default@2x-R2.png */,
 				91A8377021F2135C007883AC /* Default@2x-R4.png */,
 				91A8376021F2135C007883AC /* Default@2x-568h.png */,
-				91A8376121F2135C007883AC /* Expand */,
-				91A8376B21F2135C007883AC /* SportsCircle */,
-				91A8377121F2135C007883AC /* Other */,
-				91A8377A21F2135C007883AC /* Message */,
-				91A8378021F2135C007883AC /* Sports */,
 				91A8378421F2135C007883AC /* main.m */,
-				91A8378521F2135C007883AC /* Mine */,
-				91A8378A21F2135C007883AC /* Documents */,
-				91A8378C21F2135C007883AC /* Resource */,
 				91A8378F21F2135C007883AC /* Info.plist */,
-				91A8379021F2135C007883AC /* Found */,
 			);
 			path = Engineer;
 			sourceTree = "<group>";
@@ -207,12 +230,13 @@
 		91A8377121F2135C007883AC /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				91A8377721F2135C007883AC /* BaseViewController.h */,
+				91A8377421F2135C007883AC /* BaseViewController.m */,
+				91A8377621F2135C007883AC /* BaseNavigationtroller.h */,
 				91A8377221F2135C007883AC /* BaseNavigationtroller.m */,
 				91A8377321F2135C007883AC /* MainTabBarViewController.h */,
-				91A8377421F2135C007883AC /* BaseViewController.m */,
 				91A8377521F2135C007883AC /* MainTabBarViewController.m */,
-				91A8377621F2135C007883AC /* BaseNavigationtroller.h */,
-				91A8377721F2135C007883AC /* BaseViewController.h */,
+				9136C55E21F317CA008BFEE6 /* FZCoordinatorProtocol.h */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -254,6 +278,7 @@
 		91A8378521F2135C007883AC /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				9136C55F21F31813008BFEE6 /* Coordinators */,
 				91A8378621F2135C007883AC /* Controllers */,
 			);
 			path = Mine;
@@ -264,6 +289,11 @@
 			children = (
 				91A8378721F2135C007883AC /* FZMineViewController.h */,
 				91A8378821F2135C007883AC /* FZMineViewController.m */,
+				9136C55621F30F5E008BFEE6 /* FZMineViewController.xib */,
+				9136C55821F3164D008BFEE6 /* FZSportsPlanVC.h */,
+				9136C55921F3164D008BFEE6 /* FZSportsPlanVC.m */,
+				9136C55B21F31664008BFEE6 /* FZSportsResultVC.h */,
+				9136C55C21F31664008BFEE6 /* FZSportsResultVC.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -311,8 +341,8 @@
 		91A8379121F2135C007883AC /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				91A8379221F2135C007883AC /* FZFoundVCCoordinator.h */,
 				91A8379321F2135C007883AC /* FZFoundCoordinatorProtocol.h */,
+				91A8379221F2135C007883AC /* FZFoundVCCoordinator.h */,
 				91A8379421F2135C007883AC /* FZFoundVCCoordinator.m */,
 			);
 			path = Coordinators;
@@ -470,6 +500,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91A837BF21F2135C007883AC /* 汉仪菱心体简.ttf in Resources */,
+				9136C55721F30F5E008BFEE6 /* FZMineViewController.xib in Resources */,
 				91A837AE21F2135C007883AC /* Default@2x-568h.png in Resources */,
 				91A837B621F2135C007883AC /* Assets.xcassets in Resources */,
 				91A837B921F2135C007883AC /* LaunchScreen.storyboard in Resources */,
@@ -517,11 +548,14 @@
 				91A837C221F2135C007883AC /* FZFoundViewModel.m in Sources */,
 				91A837BC21F2135C007883AC /* FZMineViewController.m in Sources */,
 				91A837B021F2135C007883AC /* FZUtility.m in Sources */,
+				9136C55A21F3164D008BFEE6 /* FZSportsPlanVC.m in Sources */,
+				9136C55D21F31664008BFEE6 /* FZSportsResultVC.m in Sources */,
 				91A837B421F2135C007883AC /* BaseViewController.m in Sources */,
 				91A837B321F2135C007883AC /* BaseNavigationtroller.m in Sources */,
 				91A837B121F2135C007883AC /* FZSportsCircleViewController.m in Sources */,
 				91A837C521F2135C007883AC /* FZFoundRequest.m in Sources */,
 				91A837C721F2135C007883AC /* FZGradientView.m in Sources */,
+				9136C56321F318D3008BFEE6 /* FZMineCoordinator.m in Sources */,
 				91A837C121F2135C007883AC /* FZFoundVCCoordinator.m in Sources */,
 				91A837C621F2135C007883AC /* FZFoundViewController.m in Sources */,
 				91A837C821F2135C007883AC /* FZFoundServer.m in Sources */,
@@ -641,7 +675,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Engineer/Engineer.pch";
 				INFOPLIST_FILE = Engineer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xkc.Map;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xkc.Engineer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "b99b503a-535b-42a6-ae4f-5e182a140f99";
 			};
@@ -657,7 +691,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Engineer/Engineer.pch";
 				INFOPLIST_FILE = Engineer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xkc.Map;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xkc.Engineer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "b99b503a-535b-42a6-ae4f-5e182a140f99";
 			};

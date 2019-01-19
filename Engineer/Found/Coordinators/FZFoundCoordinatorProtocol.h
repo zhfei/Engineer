@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "FZCoordinatorProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol FZFoundCoordinatorProtocol <NSObject>
+@protocol FZFoundCoordinatorProtocol <FZCoordinatorProtocol>
 
 @end
 

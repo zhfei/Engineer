@@ -23,21 +23,30 @@
 @end
 
 @implementation MainTabBarViewController
-
+#pragma mark - Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    [self createControls];
+    [self setupUI];
 }
 
--(void)createControls
-{
+
+#pragma mark - Getter, Setter
+
+#pragma mark - Event
+
+#pragma mark - Public Method
+
+#pragma mark - Private Method
+- (void)setupData {
+    
+}
+
+- (void)setupUI  {
     
     [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:RGBACOLOR(105, 189, 76, 1),NSForegroundColorAttributeName, nil]forState:UIControlStateSelected];
-    
     [[UITabBarItem appearance] setTitlePositionAdjustment:UIOffsetMake(0, -2)];
-    
     
     FZSportsCircleViewController *sportsCircle=[[FZSportsCircleViewController alloc]init];
     BaseNavigationtroller *nav1=[[BaseNavigationtroller alloc]initWithRootViewController:sportsCircle];
@@ -75,8 +84,7 @@
     nav5.tabBarItem.selectedImage=[[UIImage imageNamed:@"main_tab_title_personal_1~iphone"]
     imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     
-    
-    
+
     nav1.tabBarItem.imageInsets=UIEdgeInsetsMake(-1, 0, 1, 0);
     nav2.tabBarItem.imageInsets=UIEdgeInsetsMake(-1, 0, 1, 0);
     nav3.tabBarItem.imageInsets=UIEdgeInsetsMake(-1, 0, 1, 0);
@@ -86,11 +94,22 @@
 
     controlArray=[[NSMutableArray alloc]initWithObjects:nav1,nav2,nav3,nav4,nav5, nil];
     self.viewControllers=controlArray;
+}
+
+
+
+- (void)resetData {
     
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (void)resetUI {
+    
 }
+
+#pragma mark - Delegate
+
+#pragma mark - NSCopying
+
+#pragma mark - NSObject
 
 @end

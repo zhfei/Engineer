@@ -7,7 +7,24 @@
 //
 
 #import "FZMineViewController.h"
+#import "FZMineCoordinator.h"
+#import "FZSportsPlanVC.h"
+#import "FZSportsResultVC.h"
+
+@interface FZMineViewController ()
+
+@end
 
 @implementation FZMineViewController
+
+- (IBAction)sportsPlan:(UIButton *)sender {
+    UIViewController *vc = [[FZMineCoordinator sharedFZMineCoordinator] targetVCWithClassName:NSStringFromClass([FZSportsPlanVC class])];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)sportsResult:(UIButton *)sender {
+    UIViewController *vc = [[FZMineCoordinator sharedFZMineCoordinator] targetVCWithClassName:NSStringFromClass([FZSportsResultVC class])];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 @end

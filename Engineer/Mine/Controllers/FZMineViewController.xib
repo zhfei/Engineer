@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FZMineViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="oJu-48-nZ8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7m-cr-asz">
+                    <rect key="frame" x="97.5" y="185" width="180" height="38"/>
+                    <color key="backgroundColor" red="0.2274509804" green="0.49803921569999998" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="180" id="51S-ng-0HW"/>
+                        <constraint firstAttribute="height" constant="38" id="ITS-ci-mRN"/>
+                    </constraints>
+                    <state key="normal" title="运动计划"/>
+                    <connections>
+                        <action selector="sportsPlan:" destination="-1" eventType="touchUpInside" id="ogO-UN-49g"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J1J-tE-fhs">
+                    <rect key="frame" x="97.5" y="247" width="180" height="38"/>
+                    <color key="backgroundColor" red="0.95294117649999999" green="0.4549019608" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="3sW-xI-Pex"/>
+                        <constraint firstAttribute="width" constant="180" id="p1M-vt-XJv"/>
+                    </constraints>
+                    <state key="normal" title="训练成绩"/>
+                    <connections>
+                        <action selector="sportsResult:" destination="-1" eventType="touchUpInside" id="1iq-T5-7HX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="J7m-cr-asz" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="MO0-ZG-KBi"/>
+                <constraint firstItem="J7m-cr-asz" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="165" id="gfG-ZV-YrV"/>
+                <constraint firstItem="J1J-tE-fhs" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hFF-o5-9rF"/>
+                <constraint firstItem="J1J-tE-fhs" firstAttribute="top" secondItem="J7m-cr-asz" secondAttribute="bottom" constant="24" id="wzD-bV-mXF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="132" y="154.27286356821591"/>
+        </view>
+    </objects>
+</document>
