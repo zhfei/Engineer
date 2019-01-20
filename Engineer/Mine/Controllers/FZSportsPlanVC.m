@@ -9,6 +9,7 @@
 #import "FZSportsPlanVC.h"
 #import <BottomComponentLib/UILabel+ShortCut.h>
 #import <Masonry.h>
+#import <MGJRouter.h>
 
 @interface FZSportsPlanVC ()
 @property (nonatomic, strong) UILabel *content;
@@ -17,6 +18,14 @@
 
 @implementation FZSportsPlanVC
 #pragma mark - Life Cycle
++ (void)load {
+    [MGJRouter registerURLPattern:@"engineer://SportsPlanVC" toObjectHandler:^id(NSDictionary *routerParameters) {
+        FZSportsPlanVC *planVC = [FZSportsPlanVC new];
+        [planVC configContent:routerParameters[@"MGJRouterParameterUserInfo"][@"title"]];
+        return planVC;
+    }];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

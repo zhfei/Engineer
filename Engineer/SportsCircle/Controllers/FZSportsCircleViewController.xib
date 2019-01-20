@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,36 +21,68 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jj3-Dc-BiB">
-                    <rect key="frame" x="62.5" y="169" width="250" height="38"/>
+                    <rect key="frame" x="37.5" y="120" width="300" height="38"/>
                     <color key="backgroundColor" red="0.2274509804" green="0.49803921569999998" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="38" id="wWr-hT-7U9"/>
-                        <constraint firstAttribute="width" constant="250" id="ym6-iD-ajb"/>
+                        <constraint firstAttribute="width" constant="300" id="ym6-iD-ajb"/>
                     </constraints>
-                    <state key="normal" title="去个人中心的运动计划详情"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="去个人中心的运动计划详情Mediator"/>
                     <connections>
                         <action selector="goSportsPlanDetail:" destination="-1" eventType="touchUpInside" id="iSd-2C-9A9"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEb-ip-squ">
-                    <rect key="frame" x="62.5" y="231" width="250" height="38"/>
+                    <rect key="frame" x="37.5" y="182" width="300" height="38"/>
                     <color key="backgroundColor" red="0.95294117649999999" green="0.4549019608" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="38" id="9A1-os-Aaw"/>
-                        <constraint firstAttribute="width" constant="250" id="CHZ-Jm-agw"/>
+                        <constraint firstAttribute="width" constant="300" id="CHZ-Jm-agw"/>
                     </constraints>
-                    <state key="normal" title="去个人中心的训练成绩详情"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="去个人中心的训练成绩详情Mediator"/>
                     <connections>
                         <action selector="goSportsResultDetail:" destination="-1" eventType="touchUpInside" id="XkW-bp-BG1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ran-MA-BDT">
+                    <rect key="frame" x="37.5" y="316" width="300" height="38"/>
+                    <color key="backgroundColor" red="0.2274509804" green="0.49803921569999998" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="DHp-aV-kU4"/>
+                        <constraint firstAttribute="height" constant="38" id="eQZ-V0-r3s"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="去个人中心的运动计划详情MGJRouter"/>
+                    <connections>
+                        <action selector="mgj_goSportsPlanDetail:" destination="-1" eventType="touchUpInside" id="yyy-Ap-rca"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBw-k8-TRD">
+                    <rect key="frame" x="37.5" y="378" width="300" height="38"/>
+                    <color key="backgroundColor" red="0.95294117649999999" green="0.4549019608" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="WrC-EW-nMG"/>
+                        <constraint firstAttribute="height" constant="38" id="x3P-dL-cZb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="去个人中心的训练成绩详情MGJRouter"/>
+                    <connections>
+                        <action selector="mgj_goSportsResultDetail:" destination="-1" eventType="touchUpInside" id="aV6-at-2rC"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="iEb-ip-squ" firstAttribute="top" secondItem="Jj3-Dc-BiB" secondAttribute="bottom" constant="24" id="0zr-z2-KrJ"/>
-                <constraint firstItem="Jj3-Dc-BiB" firstAttribute="top" secondItem="Z8C-rs-8my" secondAttribute="top" constant="149" id="1H1-HW-FdP"/>
+                <constraint firstItem="wBw-k8-TRD" firstAttribute="centerX" secondItem="8xV-lK-muc" secondAttribute="centerX" id="1DM-Er-9N3"/>
+                <constraint firstItem="Jj3-Dc-BiB" firstAttribute="top" secondItem="Z8C-rs-8my" secondAttribute="top" constant="100" id="1H1-HW-FdP"/>
+                <constraint firstItem="ran-MA-BDT" firstAttribute="top" secondItem="iEb-ip-squ" secondAttribute="bottom" constant="96" id="MEM-8D-O6G"/>
                 <constraint firstItem="iEb-ip-squ" firstAttribute="centerX" secondItem="8xV-lK-muc" secondAttribute="centerX" id="eUa-cL-Qw6"/>
                 <constraint firstItem="Jj3-Dc-BiB" firstAttribute="centerX" secondItem="8xV-lK-muc" secondAttribute="centerX" id="fhk-Ai-JLy"/>
+                <constraint firstItem="ran-MA-BDT" firstAttribute="centerX" secondItem="8xV-lK-muc" secondAttribute="centerX" id="fuQ-G5-7Z2"/>
+                <constraint firstItem="wBw-k8-TRD" firstAttribute="top" secondItem="ran-MA-BDT" secondAttribute="bottom" constant="24" id="scc-Ar-vyU"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Z8C-rs-8my"/>
         </view>
