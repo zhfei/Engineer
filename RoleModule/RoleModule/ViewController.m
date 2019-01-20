@@ -20,7 +20,10 @@
 }
 
 - (IBAction)openURL:(UIButton *)sender {
-    NSURL *url = [NSURL URLWithString:@"engineer://www.baidu.com"];
+//engineer://Mine/remoteAlertSportsResultVC?title=外部URL
+    //    NSURL *url = [NSURL URLWithString:@"engineer://Mine/remoteAlertSportsResultVC?title=外部URL"];
+
+    NSURL *url = [NSURL URLWithString:@"engineer://Mine/remoteAlertSportsResultVC?title=myURL"];
     if ([[UIApplication sharedApplication] canOpenURL:url]) {
         [[UIApplication sharedApplication] openURL:url options:@{@"key":@"hello"} completionHandler:nil];
     } else {

@@ -10,6 +10,7 @@
 #import "FZMineCoordinator.h"
 #import "FZSportsPlanVC.h"
 #import "FZSportsResultVC.h"
+#import <BottomComponentLib/ZHFTopWindow.h>
 
 @implementation Target_Mine
 - (id)Action_nativeFetchSportsResultVC:(NSDictionary *)param {
@@ -26,4 +27,18 @@
     }
     return vc;
 }
+
+- (void)Action_remoteAlertSportsResultVC:(NSDictionary *)param {
+    UIViewController *vc = [[FZMineCoordinator sharedFZMineCoordinator] targetVCWithClassName:NSStringFromClass([FZSportsResultVC class])];
+    if ([vc isKindOfClass:[FZSportsResultVC class]]) {
+        [(FZSportsPlanVC *)vc configContent:param[@"title"]];
+    }
+    
+    id<UIApplicationDelegate> appDelegate = [UIApplication sharedApplication].delegate;
+    UITabBarController *rootVC = [[appDelegate window] rootViewController];
+    [rootVC.childViewControllers[0] pushViewController:vc animated:YES];
+}
+
+
+
 @end

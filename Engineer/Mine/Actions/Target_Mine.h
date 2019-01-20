@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface Target_Mine : NSObject
 - (id)Action_nativeFetchSportsResultVC:(NSDictionary *)param;
 - (id)Action_nativeFetchSportsPlanVC:(NSDictionary *)param;
+
+- (void)Action_remoteAlertSportsResultVC:(NSDictionary *)param;
 @end
 
 NS_ASSUME_NONNULL_END

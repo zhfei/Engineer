@@ -13,6 +13,8 @@ NSString * const FZMediatorTargetMine = @"Mine";
 NSString * const FZMediatorActionNativFetchSportsResultVC = @"nativeFetchSportsResultVC";
 NSString * const FZMediatorActionNativFetchSportsPlanVC = @"nativeFetchSportsPlanVC";
 
+NSString * const FZMediatorActionRemoteFetchSportsResultVC = @"remoteFetchSportsResultVC";
+
 
 @implementation CTMediator (Mine)
 - (UIViewController *)Mediator_fetchSportsResultVC:(NSDictionary *)param {
