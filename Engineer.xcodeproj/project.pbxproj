@@ -108,6 +108,7 @@
 		91A837C621F2135C007883AC /* FZFoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A837A521F2135C007883AC /* FZFoundViewController.m */; };
 		91A837C721F2135C007883AC /* FZGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A837A721F2135C007883AC /* FZGradientView.m */; };
 		91A837C821F2135C007883AC /* FZFoundServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A837AB21F2135C007883AC /* FZFoundServer.m */; };
+		91A837EF21F4D215007883AC /* FZProtocolMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A837EE21F4D215007883AC /* FZProtocolMediator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -183,6 +184,8 @@
 		91A837A821F2135C007883AC /* FZGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZGradientView.h; sourceTree = "<group>"; };
 		91A837AA21F2135C007883AC /* FZFoundServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FZFoundServer.h; sourceTree = "<group>"; };
 		91A837AB21F2135C007883AC /* FZFoundServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FZFoundServer.m; sourceTree = "<group>"; };
+		91A837ED21F4D215007883AC /* FZProtocolMediator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZProtocolMediator.h; sourceTree = "<group>"; };
+		91A837EE21F4D215007883AC /* FZProtocolMediator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FZProtocolMediator.m; sourceTree = "<group>"; };
 		CB0E46C099B26B9BDA420B4B /* libPods-Map.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Map.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7EAF06D9E24C1A5BA2259E9 /* libPods-Engineer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Engineer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -275,6 +278,7 @@
 		91A8375F21F2135C007883AC /* Engineer */ = {
 			isa = PBXGroup;
 			children = (
+				91A837EC21F4D1EC007883AC /* ProtocolMediator */,
 				9136C56721F320A8008BFEE6 /* FZMediator */,
 				91A8378A21F2135C007883AC /* Documents */,
 				91A8379021F2135C007883AC /* Found */,
@@ -546,6 +550,15 @@
 			path = Servers;
 			sourceTree = "<group>";
 		};
+		91A837EC21F4D1EC007883AC /* ProtocolMediator */ = {
+			isa = PBXGroup;
+			children = (
+				91A837ED21F4D215007883AC /* FZProtocolMediator.h */,
+				91A837EE21F4D215007883AC /* FZProtocolMediator.m */,
+			);
+			path = ProtocolMediator;
+			sourceTree = "<group>";
+		};
 		9A4EA04FA6C7FD8624EE591B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -757,6 +770,7 @@
 				91A837C121F2135C007883AC /* FZFoundVCCoordinator.m in Sources */,
 				91A837C621F2135C007883AC /* FZFoundViewController.m in Sources */,
 				91A837C821F2135C007883AC /* FZFoundServer.m in Sources */,
+				91A837EF21F4D215007883AC /* FZProtocolMediator.m in Sources */,
 				91A837C321F2135C007883AC /* FZUserModel.m in Sources */,
 				91A837BD21F2135C007883AC /* AppDelegate.m in Sources */,
 				91A837C421F2135C007883AC /* FZFoundStorage.m in Sources */,
