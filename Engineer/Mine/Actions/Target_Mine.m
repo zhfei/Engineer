@@ -38,7 +38,4 @@
     UITabBarController *rootVC = [[appDelegate window] rootViewController];
     [rootVC.childViewControllers[0] pushViewController:vc animated:YES];
 }
-
-
-
 @end
