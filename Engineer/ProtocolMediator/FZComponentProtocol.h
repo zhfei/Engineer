@@ -11,8 +11,8 @@
 
 
 @protocol FZModuleMineProtocol <NSObject>
-+ (UIViewController *)fetchSportsPlanVC;
-+ (UIViewController *)fetchSportsResultVC;
++ (UIViewController *)fetchSportsPlanVC:(NSString *)title;
++ (UIViewController *)fetchSportsResultVC:(NSString *)title;
 @end
 
 

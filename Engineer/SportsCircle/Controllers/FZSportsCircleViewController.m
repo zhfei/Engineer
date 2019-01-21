@@ -34,13 +34,13 @@
 - (IBAction)protocol_class_goSportsPlanDetail:(UIButton *)sender {
     Class<FZModuleMineProtocol> class = [[FZProtocolMediator sharedFZProtocolMediator] classForProtocol:NSProtocolFromString(@"FZModuleMineProtocol")];
 
-    UIViewController *vc = [class fetchSportsPlanVC];
+    UIViewController *vc = [class fetchSportsPlanVC:sender.currentTitle];
     [self.navigationController pushViewController:vc animated:YES];
 }
 - (IBAction)protocol_class_goSportsResultDetail:(UIButton *)sender {
     Class<FZModuleMineProtocol> class = [[FZProtocolMediator sharedFZProtocolMediator] classForProtocol:NSProtocolFromString(@"FZModuleMineProtocol")];
     
-    UIViewController *vc = [class fetchSportsResultVC];
+    UIViewController *vc = [class fetchSportsResultVC:sender.currentTitle];
     [self.navigationController pushViewController:vc animated:YES];
 }
 @end

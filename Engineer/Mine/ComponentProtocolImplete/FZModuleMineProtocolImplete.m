@@ -16,11 +16,15 @@
     [[FZProtocolMediator sharedFZProtocolMediator] registerProtocol:NSProtocolFromString(@"FZModuleMineProtocol") forClass:[FZModuleMineProtocolImplete class]];
 }
 
-+ (UIViewController *)fetchSportsPlanVC {
-    return [FZSportsPlanVC new];
++ (UIViewController *)fetchSportsPlanVC:title {
+    FZSportsPlanVC *plan = [FZSportsPlanVC new];
+    [plan configContent:title];
+    return plan;
 }
 
-+ (UIViewController *)fetchSportsResultVC {
-    return [FZSportsResultVC new];
++ (UIViewController *)fetchSportsResultVC:title {
+    FZSportsResultVC *result = [FZSportsResultVC new];
+    [result configContent:title];
+    return result;
 }
 @end
