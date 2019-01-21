@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0017076EE98E0C649869294C /* libPods-Engineer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7EAF06D9E24C1A5BA2259E9 /* libPods-Engineer.a */; };
 		7BE2382A9FECA29EC560B55C /* libPods-Engineer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7EAF06D9E24C1A5BA2259E9 /* libPods-Engineer.a */; };
+		9127B32621F56DC90076AA76 /* FZModuleMineProtocolImplete.m in Sources */ = {isa = PBXBuildFile; fileRef = 9127B32521F56DC90076AA76 /* FZModuleMineProtocolImplete.m */; };
 		9136C55721F30F5E008BFEE6 /* FZMineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9136C55621F30F5E008BFEE6 /* FZMineViewController.xib */; };
 		9136C55A21F3164D008BFEE6 /* FZSportsPlanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9136C55921F3164D008BFEE6 /* FZSportsPlanVC.m */; };
 		9136C55D21F31664008BFEE6 /* FZSportsResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9136C55C21F31664008BFEE6 /* FZSportsResultVC.m */; };
@@ -117,6 +118,8 @@
 		36EBEAD1876E8D1073E2D42C /* Pods-Engineer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Engineer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Engineer/Pods-Engineer.release.xcconfig"; sourceTree = "<group>"; };
 		4E3A42254946296D436A434C /* Pods-Engineer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Engineer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Engineer/Pods-Engineer.debug.xcconfig"; sourceTree = "<group>"; };
 		9101E2C81D05B0910064729F /* Engineer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Engineer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9127B32421F56DC90076AA76 /* FZModuleMineProtocolImplete.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZModuleMineProtocolImplete.h; sourceTree = "<group>"; };
+		9127B32521F56DC90076AA76 /* FZModuleMineProtocolImplete.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FZModuleMineProtocolImplete.m; sourceTree = "<group>"; };
 		9136C55621F30F5E008BFEE6 /* FZMineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FZMineViewController.xib; sourceTree = "<group>"; };
 		9136C55821F3164D008BFEE6 /* FZSportsPlanVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZSportsPlanVC.h; sourceTree = "<group>"; };
 		9136C55921F3164D008BFEE6 /* FZSportsPlanVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FZSportsPlanVC.m; sourceTree = "<group>"; };
@@ -135,6 +138,7 @@
 		914192B021F3870000C277AB /* Engineer copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Engineer copy-Info.plist"; path = "/Users/zhoufei/Documents/MyFile/Engineer/Engineer copy-Info.plist"; sourceTree = "<absolute>"; };
 		914192DB21F3879800C277AB /* Victim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Victim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		914192DC21F3879800C277AB /* Attacker copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Attacker copy-Info.plist"; path = "/Users/zhoufei/Documents/MyFile/Engineer/Attacker copy-Info.plist"; sourceTree = "<absolute>"; };
+		919BC63521F4D477006EC466 /* FZComponentProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZComponentProtocol.h; sourceTree = "<group>"; };
 		91A8376021F2135C007883AC /* Default@2x-568h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x-568h.png"; sourceTree = "<group>"; };
 		91A8376321F2135C007883AC /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		91A8376421F2135C007883AC /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
@@ -237,6 +241,15 @@
 				914192DB21F3879800C277AB /* Victim.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9127B32321F56D090076AA76 /* ComponentProtocolImplete */ = {
+			isa = PBXGroup;
+			children = (
+				9127B32421F56DC90076AA76 /* FZModuleMineProtocolImplete.h */,
+				9127B32521F56DC90076AA76 /* FZModuleMineProtocolImplete.m */,
+			);
+			path = ComponentProtocolImplete;
 			sourceTree = "<group>";
 		};
 		9136C55F21F31813008BFEE6 /* Coordinators */ = {
@@ -408,6 +421,7 @@
 		91A8378521F2135C007883AC /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				9127B32321F56D090076AA76 /* ComponentProtocolImplete */,
 				9141928121F3627B00C277AB /* Actions */,
 				9136C55F21F31813008BFEE6 /* Coordinators */,
 				91A8378621F2135C007883AC /* Controllers */,
@@ -555,6 +569,7 @@
 			children = (
 				91A837ED21F4D215007883AC /* FZProtocolMediator.h */,
 				91A837EE21F4D215007883AC /* FZProtocolMediator.m */,
+				919BC63521F4D477006EC466 /* FZComponentProtocol.h */,
 			);
 			path = ProtocolMediator;
 			sourceTree = "<group>";
@@ -727,15 +742,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Engineer-checkManifestLockResult.txt",
 			);
@@ -772,6 +783,7 @@
 				91A837C821F2135C007883AC /* FZFoundServer.m in Sources */,
 				91A837EF21F4D215007883AC /* FZProtocolMediator.m in Sources */,
 				91A837C321F2135C007883AC /* FZUserModel.m in Sources */,
+				9127B32621F56DC90076AA76 /* FZModuleMineProtocolImplete.m in Sources */,
 				91A837BD21F2135C007883AC /* AppDelegate.m in Sources */,
 				91A837C421F2135C007883AC /* FZFoundStorage.m in Sources */,
 				91A837BA21F2135C007883AC /* FZSportsViewController.m in Sources */,

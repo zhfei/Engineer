@@ -13,6 +13,7 @@
 @end
 
 @implementation FZProtocolMediator
+SingletonM(FZProtocolMediator)
 - (void)registerProtocol:(Protocol *)proto forClass:(Class)cls {
     [self.protocolCache setObject:cls forKey:NSStringFromProtocol(proto)];
 }

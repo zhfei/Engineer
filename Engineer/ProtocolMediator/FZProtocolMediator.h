@@ -7,12 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <BottomComponentLib/Macro.h>
+#import "FZComponentProtocol.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FZProtocolMediator : NSObject
+SingletonH(FZProtocolMediator)
 - (void)registerProtocol:(Protocol *)proto forClass:(Class)cls ;
 - (Class)classForProtocol:(Protocol *)proto ;
+
 
 @end
 

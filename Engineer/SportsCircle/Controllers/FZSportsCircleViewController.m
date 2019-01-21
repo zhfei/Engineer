@@ -9,6 +9,8 @@
 #import "FZSportsCircleViewController.h"
 #import "CTMediator+Mine.h"
 #import <MGJRouter.h>
+#import "FZProtocolMediator.h"
+#import "FZComponentProtocol.h"
 
 @implementation FZSportsCircleViewController
 - (IBAction)goSportsPlanDetail:(UIButton *)sender {
@@ -26,6 +28,19 @@
 }
 - (IBAction)mgj_goSportsResultDetail:(UIButton *)sender {
     UIViewController *vc = [MGJRouter objectForURL:@"engineer://SportsResultVC" withUserInfo:@{@"title":[sender currentTitle]}];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)protocol_class_goSportsPlanDetail:(UIButton *)sender {
+    Class<FZModuleMineProtocol> class = [[FZProtocolMediator sharedFZProtocolMediator] classForProtocol:NSProtocolFromString(@"FZModuleMineProtocol")];
+
+    UIViewController *vc = [class fetchSportsPlanVC];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+- (IBAction)protocol_class_goSportsResultDetail:(UIButton *)sender {
+    Class<FZModuleMineProtocol> class = [[FZProtocolMediator sharedFZProtocolMediator] classForProtocol:NSProtocolFromString(@"FZModuleMineProtocol")];
+    
+    UIViewController *vc = [class fetchSportsResultVC];
     [self.navigationController pushViewController:vc animated:YES];
 }
 @end

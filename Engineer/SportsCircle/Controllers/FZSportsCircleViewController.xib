@@ -27,7 +27,7 @@
                         <constraint firstAttribute="height" constant="38" id="wWr-hT-7U9"/>
                         <constraint firstAttribute="width" constant="300" id="ym6-iD-ajb"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <state key="normal" title="去个人中心的运动计划详情Mediator"/>
                     <connections>
                         <action selector="goSportsPlanDetail:" destination="-1" eventType="touchUpInside" id="iSd-2C-9A9"/>
@@ -40,51 +40,106 @@
                         <constraint firstAttribute="height" constant="38" id="9A1-os-Aaw"/>
                         <constraint firstAttribute="width" constant="300" id="CHZ-Jm-agw"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <state key="normal" title="去个人中心的训练成绩详情Mediator"/>
                     <connections>
                         <action selector="goSportsResultDetail:" destination="-1" eventType="touchUpInside" id="XkW-bp-BG1"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ran-MA-BDT">
-                    <rect key="frame" x="37.5" y="316" width="300" height="38"/>
+                    <rect key="frame" x="37.5" y="270" width="300" height="38"/>
                     <color key="backgroundColor" red="0.2274509804" green="0.49803921569999998" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="300" id="DHp-aV-kU4"/>
                         <constraint firstAttribute="height" constant="38" id="eQZ-V0-r3s"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <state key="normal" title="去个人中心的运动计划详情MGJRouter"/>
                     <connections>
                         <action selector="mgj_goSportsPlanDetail:" destination="-1" eventType="touchUpInside" id="yyy-Ap-rca"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBw-k8-TRD">
-                    <rect key="frame" x="37.5" y="378" width="300" height="38"/>
+                    <rect key="frame" x="37.5" y="332" width="300" height="38"/>
                     <color key="backgroundColor" red="0.95294117649999999" green="0.4549019608" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="300" id="WrC-EW-nMG"/>
                         <constraint firstAttribute="height" constant="38" id="x3P-dL-cZb"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <state key="normal" title="去个人中心的训练成绩详情MGJRouter"/>
                     <connections>
                         <action selector="mgj_goSportsResultDetail:" destination="-1" eventType="touchUpInside" id="aV6-at-2rC"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOV-lD-fHe">
+                    <rect key="frame" x="37.5" y="424" width="300" height="38"/>
+                    <color key="backgroundColor" red="0.2274509804" green="0.49803921569999998" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="kXF-wy-pae"/>
+                        <constraint firstAttribute="width" constant="300" id="r6m-1U-9lr"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="去个人中心的运动计划详情protocal-class"/>
+                    <connections>
+                        <action selector="protocol_class_goSportsPlanDetail:" destination="-1" eventType="touchUpInside" id="Un8-Ni-LsH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKX-hr-1oo">
+                    <rect key="frame" x="37.5" y="486" width="300" height="38"/>
+                    <color key="backgroundColor" red="0.95294117649999999" green="0.4549019608" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="NtM-mi-rm0"/>
+                        <constraint firstAttribute="height" constant="38" id="lxd-nJ-uAd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="去个人中心的训练成绩详情protocal-class"/>
+                    <connections>
+                        <action selector="protocol_class_goSportsResultDetail:" destination="-1" eventType="touchUpInside" id="5Xo-9Y-9bW"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="组件化三方案" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlu-n9-M6a">
+                    <rect key="frame" x="37" y="51" width="301" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="ahU-Uk-V07"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.target-action 2.url-block 3.protocol-class" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5Z-GN-Ll8">
+                    <rect key="frame" x="37" y="80" width="301" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="5i3-QO-Wx0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="iEb-ip-squ" firstAttribute="top" secondItem="Jj3-Dc-BiB" secondAttribute="bottom" constant="24" id="0zr-z2-KrJ"/>
                 <constraint firstItem="wBw-k8-TRD" firstAttribute="centerX" secondItem="8xV-lK-muc" secondAttribute="centerX" id="1DM-Er-9N3"/>
                 <constraint firstItem="Jj3-Dc-BiB" firstAttribute="top" secondItem="Z8C-rs-8my" secondAttribute="top" constant="100" id="1H1-HW-FdP"/>
-                <constraint firstItem="ran-MA-BDT" firstAttribute="top" secondItem="iEb-ip-squ" secondAttribute="bottom" constant="96" id="MEM-8D-O6G"/>
+                <constraint firstItem="sKX-hr-1oo" firstAttribute="top" secondItem="VOV-lD-fHe" secondAttribute="bottom" constant="24" id="BGF-bd-atb"/>
+                <constraint firstItem="tlu-n9-M6a" firstAttribute="top" secondItem="Z8C-rs-8my" secondAttribute="top" constant="31" id="Il7-Hn-FLH"/>
+                <constraint firstItem="sKX-hr-1oo" firstAttribute="centerX" secondItem="8xV-lK-muc" secondAttribute="centerX" id="LBV-9R-Fbe"/>
+                <constraint firstItem="ran-MA-BDT" firstAttribute="top" secondItem="iEb-ip-squ" secondAttribute="bottom" constant="50" id="MEM-8D-O6G"/>
+                <constraint firstItem="e5Z-GN-Ll8" firstAttribute="leading" secondItem="Z8C-rs-8my" secondAttribute="leading" constant="37" id="Tkn-mu-3G1"/>
+                <constraint firstItem="Z8C-rs-8my" firstAttribute="trailing" secondItem="e5Z-GN-Ll8" secondAttribute="trailing" constant="37" id="eAg-rl-Usz"/>
                 <constraint firstItem="iEb-ip-squ" firstAttribute="centerX" secondItem="8xV-lK-muc" secondAttribute="centerX" id="eUa-cL-Qw6"/>
                 <constraint firstItem="Jj3-Dc-BiB" firstAttribute="centerX" secondItem="8xV-lK-muc" secondAttribute="centerX" id="fhk-Ai-JLy"/>
                 <constraint firstItem="ran-MA-BDT" firstAttribute="centerX" secondItem="8xV-lK-muc" secondAttribute="centerX" id="fuQ-G5-7Z2"/>
+                <constraint firstItem="tlu-n9-M6a" firstAttribute="leading" secondItem="Z8C-rs-8my" secondAttribute="leading" constant="37" id="gQ7-vi-SRh"/>
+                <constraint firstItem="Z8C-rs-8my" firstAttribute="trailing" secondItem="tlu-n9-M6a" secondAttribute="trailing" constant="37" id="msi-wg-dnv"/>
+                <constraint firstItem="e5Z-GN-Ll8" firstAttribute="top" secondItem="tlu-n9-M6a" secondAttribute="bottom" constant="8" id="nZ7-kl-7m7"/>
+                <constraint firstItem="VOV-lD-fHe" firstAttribute="top" secondItem="wBw-k8-TRD" secondAttribute="bottom" constant="54" id="rgy-FQ-nr7"/>
                 <constraint firstItem="wBw-k8-TRD" firstAttribute="top" secondItem="ran-MA-BDT" secondAttribute="bottom" constant="24" id="scc-Ar-vyU"/>
+                <constraint firstItem="VOV-lD-fHe" firstAttribute="centerX" secondItem="8xV-lK-muc" secondAttribute="centerX" id="ucZ-WN-dj6"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Z8C-rs-8my"/>
+            <point key="canvasLocation" x="39.200000000000003" y="46.326836581709152"/>
         </view>
     </objects>
 </document>
