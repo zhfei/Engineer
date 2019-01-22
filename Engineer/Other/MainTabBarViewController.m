@@ -13,6 +13,7 @@
 #import "FZSportsViewController.h"
 #import "FZSportsCircleViewController.h"
 #import "FZFoundViewController.h"
+#import <BottomComponentLib/NSObject+Runtime.h>
 
 #define kTopY -15
 
@@ -68,6 +69,7 @@
     nav3.tabBarItem.image=[[UIImage imageNamed:@"main_tab_title_sport_0~iphone"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav3.tabBarItem.selectedImage=[[UIImage imageNamed:@"main_tab_title_sport_1~iphone"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav3.tabBarItem.tag=1003;
+    nav3.tabBarItem.badgeValue=@"1";
     
     FZMessageViewController *message=[[FZMessageViewController alloc]init];
     BaseNavigationtroller *nav4=[[BaseNavigationtroller alloc]initWithRootViewController:message];
@@ -94,6 +96,34 @@
 
     controlArray=[[NSMutableArray alloc]initWithObjects:nav1,nav2,nav3,nav4,nav5, nil];
     self.viewControllers=controlArray;
+    
+    
+    
+    
+    
+    
+    UIView *barButtonView3 = [nav3.tabBarItem valueForKeyPath:@"view"];
+    UIView *swappableImageView3 = [barButtonView3.subviews lastObject];
+    
+    CABasicAnimation *base = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
+    base.fromValue = [NSNumber numberWithInteger:1.2];
+    base.toValue = [NSNumber numberWithInteger:0.5];
+    base.repeatCount = NSIntegerMax;
+    base.autoreverses = YES;//依动画的方式返回原位置
+    base.duration = 1;
+    [swappableImageView3.layer addAnimation:base forKey:@"move2"];
+    
+    
+    UIView *barButtonView4 = [nav4.tabBarItem valueForKeyPath:@"view"];
+    UIView *swappableImageView4 = [barButtonView4.subviews lastObject];
+    
+    CABasicAnimation *base4 = [CABasicAnimation animationWithKeyPath:@"transform.translation.y"];
+    base4.fromValue = [NSNumber numberWithInteger:0];
+    base4.toValue = [NSNumber numberWithInteger:10];
+    base4.repeatCount = NSIntegerMax;
+    base4.autoreverses = YES;//依动画的方式返回原位置
+    base4.duration = 1;
+    [swappableImageView4.layer addAnimation:base4 forKey:@"move4"];
 }
 
 
@@ -105,6 +135,8 @@
 - (void)resetUI {
     
 }
+
+
 
 #pragma mark - Delegate
 
