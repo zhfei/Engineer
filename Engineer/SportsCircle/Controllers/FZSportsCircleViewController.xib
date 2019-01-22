@@ -98,7 +98,7 @@
                         <action selector="protocol_class_goSportsResultDetail:" destination="-1" eventType="touchUpInside" id="5Xo-9Y-9bW"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="组件化三方案" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlu-n9-M6a">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="解耦跳转的三种方式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tlu-n9-M6a">
                     <rect key="frame" x="37" y="51" width="301" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="ahU-Uk-V07"/>

@@ -118,8 +118,8 @@
     UIView *swappableImageView4 = [barButtonView4.subviews lastObject];
     
     CABasicAnimation *base4 = [CABasicAnimation animationWithKeyPath:@"transform.translation.y"];
-    base4.fromValue = [NSNumber numberWithInteger:0];
-    base4.toValue = [NSNumber numberWithInteger:10];
+    base4.fromValue = [NSNumber numberWithInteger:-5];
+    base4.toValue = [NSNumber numberWithInteger:5];
     base4.repeatCount = NSIntegerMax;
     base4.autoreverses = YES;//依动画的方式返回原位置
     base4.duration = 1;

@@ -83,6 +83,8 @@
 		914192D521F3879800C277AB /* 组件化结构.xmind in Resources */ = {isa = PBXBuildFile; fileRef = 91A8378B21F2135C007883AC /* 组件化结构.xmind */; };
 		914192D621F3879800C277AB /* Default@2x-R2.png in Resources */ = {isa = PBXBuildFile; fileRef = 91A8377921F2135C007883AC /* Default@2x-R2.png */; };
 		914192D721F3879800C277AB /* Default@2x-R4.png in Resources */ = {isa = PBXBuildFile; fileRef = 91A8377021F2135C007883AC /* Default@2x-R4.png */; };
+		9180C18F21F74B15002711FC /* personal.png in Resources */ = {isa = PBXBuildFile; fileRef = 9180C18D21F74B15002711FC /* personal.png */; };
+		9180C19021F74B15002711FC /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 9180C18E21F74B15002711FC /* home.png */; };
 		91A837AE21F2135C007883AC /* Default@2x-568h.png in Resources */ = {isa = PBXBuildFile; fileRef = 91A8376021F2135C007883AC /* Default@2x-568h.png */; };
 		91A837AF21F2135C007883AC /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A8376321F2135C007883AC /* UIView+Frame.m */; };
 		91A837B021F2135C007883AC /* FZUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A8376921F2135C007883AC /* FZUtility.m */; };
@@ -138,6 +140,8 @@
 		914192B021F3870000C277AB /* Engineer copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Engineer copy-Info.plist"; path = "/Users/zhoufei/Documents/MyFile/Engineer/Engineer copy-Info.plist"; sourceTree = "<absolute>"; };
 		914192DB21F3879800C277AB /* Victim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Victim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		914192DC21F3879800C277AB /* Attacker copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Attacker copy-Info.plist"; path = "/Users/zhoufei/Documents/MyFile/Engineer/Attacker copy-Info.plist"; sourceTree = "<absolute>"; };
+		9180C18D21F74B15002711FC /* personal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = personal.png; sourceTree = "<group>"; };
+		9180C18E21F74B15002711FC /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		919BC63521F4D477006EC466 /* FZComponentProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FZComponentProtocol.h; sourceTree = "<group>"; };
 		91A8376021F2135C007883AC /* Default@2x-568h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x-568h.png"; sourceTree = "<group>"; };
 		91A8376321F2135C007883AC /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
@@ -454,6 +458,8 @@
 		91A8378C21F2135C007883AC /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				9180C18E21F74B15002711FC /* home.png */,
+				9180C18D21F74B15002711FC /* personal.png */,
 				91A8378D21F2135C007883AC /* TextFont */,
 			);
 			path = Resource;
@@ -692,9 +698,11 @@
 			files = (
 				91A837BF21F2135C007883AC /* 汉仪菱心体简.ttf in Resources */,
 				9136C55721F30F5E008BFEE6 /* FZMineViewController.xib in Resources */,
+				9180C19021F74B15002711FC /* home.png in Resources */,
 				91A837AE21F2135C007883AC /* Default@2x-568h.png in Resources */,
 				91A837B621F2135C007883AC /* Assets.xcassets in Resources */,
 				9136C56E21F3290C008BFEE6 /* FZSportsCircleViewController.xib in Resources */,
+				9180C18F21F74B15002711FC /* personal.png in Resources */,
 				91A837B921F2135C007883AC /* LaunchScreen.storyboard in Resources */,
 				91A837BE21F2135C007883AC /* 组件化结构.xmind in Resources */,
 				91A837B721F2135C007883AC /* Default@2x-R2.png in Resources */,
