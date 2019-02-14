@@ -106,8 +106,8 @@
     UIView *swappableImageView3 = [barButtonView3.subviews lastObject];
     
     CABasicAnimation *base = [CABasicAnimation animationWithKeyPath:@"transform.scale"];
-    base.fromValue = [NSNumber numberWithInteger:1.2];
-    base.toValue = [NSNumber numberWithInteger:0.5];
+    base.fromValue = @(1.0);
+    base.toValue = @(0.5);
     base.repeatCount = NSIntegerMax;
     base.autoreverses = YES;//依动画的方式返回原位置
     base.duration = 1;
