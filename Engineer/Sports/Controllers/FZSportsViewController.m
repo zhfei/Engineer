@@ -12,7 +12,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+   
+}
 
+-(NSString *)getValueForKey:(NSString *)key
+{
+    NSData *valueData = nil;
+    if(valueData != nil)
+    {
+        NSString *value = [[NSString alloc] initWithData:valueData encoding:NSUTF8StringEncoding];
+        return value;
+    }
+    else
+    {
+        return nil;
+    }
 }
 
 - (void)viewWillAppear:(BOOL)animated

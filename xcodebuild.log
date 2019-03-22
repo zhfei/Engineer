@@ -1,0 +1,9 @@
+Build settings from command line:
+    TOOLCHAINS = com.apple.dt.toolchain.XcodeDefault
+
+note: Using new build system
+note: Planning build
+note: Constructing build description
+Build system information
+error: "Engineer" requires a provisioning profile. Select a provisioning profile for the "Release" build configuration in the project editor. (in target 'Engineer')
+

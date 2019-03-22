@@ -6,9 +6,22 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		9117419E2245322C0067CB5F /* OCLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 911741A12245322C0067CB5F /* Build configuration list for PBXAggregateTarget "OCLint" */;
+			buildPhases = (
+				911741A2224532430067CB5F /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = OCLint;
+			productName = OCLint;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		0017076EE98E0C649869294C /* libPods-Engineer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7EAF06D9E24C1A5BA2259E9 /* libPods-Engineer.a */; };
-		7BE2382A9FECA29EC560B55C /* libPods-Engineer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7EAF06D9E24C1A5BA2259E9 /* libPods-Engineer.a */; };
 		9127B32621F56DC90076AA76 /* FZModuleMineProtocolImplete.m in Sources */ = {isa = PBXBuildFile; fileRef = 9127B32521F56DC90076AA76 /* FZModuleMineProtocolImplete.m */; };
 		9136C55721F30F5E008BFEE6 /* FZMineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9136C55621F30F5E008BFEE6 /* FZMineViewController.xib */; };
 		9136C55A21F3164D008BFEE6 /* FZSportsPlanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9136C55921F3164D008BFEE6 /* FZSportsPlanVC.m */; };
@@ -204,7 +217,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0017076EE98E0C649869294C /* libPods-Engineer.a in Frameworks */,
-				7BE2382A9FECA29EC560B55C /* libPods-Engineer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,12 +674,17 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = FZ;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = zhoufei;
 				TargetAttributes = {
 					9101E2C71D05B0910064729F = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = C7UNH8293N;
+					};
+					9117419E2245322C0067CB5F = {
+						CreatedOnToolsVersion = 10.0;
+						DevelopmentTeam = C7UNH8293N;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -687,6 +704,7 @@
 				9101E2C71D05B0910064729F /* Engineer */,
 				9141928521F386FF00C277AB /* Attacker */,
 				914192B121F3879800C277AB /* Victim */,
+				9117419E2245322C0067CB5F /* OCLint */,
 			);
 		};
 /* End PBXProject section */
@@ -745,6 +763,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		911741A2224532430067CB5F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "source ~/.bash_profile\ncd ${SRCROOT}\nxcodebuild clean\nxcodebuild | tee xcodebuild.log | xcpretty -r json-compilation-database -o compile_commands.json\noclint-json-compilation-database -e Pods oclints_args  -- -report-type xcode\n\n\n\n\n\n\n";
+		};
 		F9387A681B223DDD3908412D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -884,13 +919,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: 1174977961@qq.com (ZGN5K73BNB)";
@@ -929,13 +974,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: 1174977961@qq.com (ZGN5K73BNB)";
@@ -988,6 +1043,24 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.xkc.Engineer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "b99b503a-535b-42a6-ae4f-5e182a140f99";
+			};
+			name = Release;
+		};
+		9117419F2245322C0067CB5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C7UNH8293N;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		911741A02245322C0067CB5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C7UNH8293N;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -1068,6 +1141,15 @@
 			buildConfigurations = (
 				9101E2EB1D05B0910064729F /* Debug */,
 				9101E2EC1D05B0910064729F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		911741A12245322C0067CB5F /* Build configuration list for PBXAggregateTarget "OCLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9117419F2245322C0067CB5F /* Debug */,
+				911741A02245322C0067CB5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
