@@ -1,9 +1,10 @@
 Build settings from command line:
+    ONLY_ACTIVE_ARCH = NO
     TOOLCHAINS = com.apple.dt.toolchain.XcodeDefault
 
 note: Using new build system
 note: Planning build
 note: Constructing build description
 Build system information
-error: "Engineer" requires a provisioning profile. Select a provisioning profile for the "Release" build configuration in the project editor. (in target 'Engineer')
+error: Engineer has conflicting provisioning settings. Engineer is automatically signed, but code signing identity iPhone Developer: 1174977961@qq.com (ZGN5K73BNB) has been manually specified. Set the code signing identity value to "iPhone Developer" in the build settings editor, or switch to manual signing in the project editor. (in target 'Engineer')
 

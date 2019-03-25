@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>compileBitcode</key>
+	<false/>
+	<key>method</key>
+	<string>ad-hoc(IPA包模式)</string>
+	<key>provisioningProfiles</key>
+	<dict>(下面设置bundleID对应的provisioningProfiles文件名)
+		<key>com.***</key>
+		<string>AD_HOC</string>
+		<key>com.***.TKNotificationCentent</key>
+		<string>Content</string>
+		<key>com.***.TKNotificationService</key>
+		<string>Service</string>
+	</dict>(下面配置证书)
+	<key>signingCertificate</key>
+	<string>iPhone Distribution</string>
+	<key>signingStyle</key>
+	<string>manual</string>
+	<key>stripSwiftSymbols</key>
+	<true/>(下面配置teamID)
+	<key>teamID</key>
+	<string>KJYHPT****</string>
+	<key>thinning</key>
+	<string><none></string>
+</dict>
+</plist>

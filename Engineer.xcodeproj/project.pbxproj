@@ -680,6 +680,7 @@
 					9101E2C71D05B0910064729F = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = C7UNH8293N;
+						ProvisioningStyle = Automatic;
 					};
 					9117419E2245322C0067CB5F = {
 						CreatedOnToolsVersion = 10.0;
@@ -778,7 +779,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "source ~/.bash_profile\ncd ${SRCROOT}\nxcodebuild clean\nxcodebuild | tee xcodebuild.log | xcpretty -r json-compilation-database -o compile_commands.json\noclint-json-compilation-database -e Pods oclints_args  -- -report-type xcode\n\n\n\n\n\n\n";
+			shellScript = "source ~/.bash_profile\ncd ${SRCROOT}\nxcodebuild clean\nxcodebuild ONLY_ACTIVE_ARCH=NO -configuration Debug | tee xcodebuild.log | xcpretty -r json-compilation-database -o compile_commands.json\n\noclint-json-compilation-database -e Pods oclints_args  -- -report-type xcode\n\n\n\n\n\n\n";
 		};
 		F9387A681B223DDD3908412D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1019,14 +1020,17 @@
 			baseConfigurationReference = 4E3A42254946296D436A434C /* Pods-Engineer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: 1174977961@qq.com (ZGN5K73BNB)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 1174977961@qq.com (ZGN5K73BNB)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C7UNH8293N;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Engineer/Engineer.pch";
 				INFOPLIST_FILE = Engineer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xkc.Engineer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "b99b503a-535b-42a6-ae4f-5e182a140f99";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -1035,14 +1039,17 @@
 			baseConfigurationReference = 36EBEAD1876E8D1073E2D42C /* Pods-Engineer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: 1174977961@qq.com (ZGN5K73BNB)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: 1174977961@qq.com (ZGN5K73BNB)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C7UNH8293N;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Engineer/Engineer.pch";
 				INFOPLIST_FILE = Engineer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xkc.Engineer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "b99b503a-535b-42a6-ae4f-5e182a140f99";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
